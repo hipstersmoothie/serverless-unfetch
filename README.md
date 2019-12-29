@@ -1,48 +1,35 @@
-# Basic API routes example
+Setup:
 
-## Deploy your own
-
-Deploy the example using [ZEIT Now](https://zeit.co/now):
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/api-routes)
-
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example api-routes api-routes-app
-# or
-yarn create next-app --example api-routes api-routes-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/api-routes
-cd api-routes
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
+```sh
 yarn
-yarn dev
+yarn build
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
+Error:
 
-```bash
-now
 ```
+➜ yarn build
+yarn run v1.15.2
+$ next build
+Creating an optimized production build
 
-## The idea behind the example
+Compiled with warnings.
 
-Next.js ships with [API routes](https://github.com/zeit/next.js#api-routes) which provides an easy solution to build your own `API`. This example shows how to create multiple `API` endpoints with serverless functions, which can execute independently.
+./node_modules/node-fetch/lib/index.js
+Module not found: Can't resolve 'encoding' in '/Users/alisowski/Documents/api-routes-app/node_modules/node-fetch/lib'
+
+Automatically optimizing pages
+
+Page                    Size
+─ ○ /                   275 B
++ shared by all         68.4 kB
+  ├ chunks/commons.js   62.6 kB
+  ├ runtime/main.js     5.06 kB
+  └ runtime/webpack.js  746 B
+
+λ  (Lambda)  server-side renders at runtime (uses getInitialProps or getServerProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+
+✨  Done in 4.18s.
+```

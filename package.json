@@ -12,5 +12,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.4"
+  }
 }
